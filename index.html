@@ -1,194 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html>
-<meta name="google-site-verification" content="_ZgzEVym06PQwcjw-foPnqd4PJzW6bP5vnldQG1NgSU" />
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="xyz12345abcde" />
-  <title>BassKing Audio</title>
-</head>
-<body>
-
-  <div class="product">
-    <img src="images/IMG-20250819-WA0002.jpg" alt="Product 2">
-    <p>Product 2</p>
-    <p class="price">Price: 2250 PKR</p>
-    <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%202" class="buy-btn">Buy Now</a>
-  </div>
-
-  <div class="product">
-    <img src="images/IMG-20250819-WA0003.jpg" alt="Product 3">
-    <p>Product 3</p>
-    <p class="price">Price: 2250 PKR</p>
-    <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%203" class="buy-btn">Buy Now</a>
-  </div>
-
-  <div class="product">
-    <img src="images/IMG-20250901-WA003.jpg" alt="Product 4">
-    <p>Product 4</p>
-    <p class="price">Price: 2250 PKR</p>
-    <a href="https://wa.me/923248682800?text=I%20want%20to%20buy%20Product%204" class="buy-btn">Buy Now</a>
-  </div>
-
-</body>
-</html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BassKing Audio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #f5f5f5;
     }
     header {
       background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .product-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin: 10px;
-      padding: 15px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-    .product-card h3 {
-      margin: 10px 0 5px;
-    }
-    .product-card p {
-      margin: 5px 0;
-    }
-    button {
-      background: #222;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      margin-top: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    button:hover {
-      background: #444;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>BassKing Audio Products</h1>
-  </header>
-
-  <section class="products">
-    <div class="product-card">
-      <img src="images/IMG-20250819-WA0001.jpg" alt="Premium Speaker">
-      <h3>Premium Speaker</h3>
-      <p>High bass, crystal clear sound.</p>
-      <p>$120</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/IMG-20250819-WA0002.jpg" alt="Wireless Headphones">
-      <h3>Wireless Headphones</h3>
-      <p>Comfortable design, long battery life.</p>
-      <p>$80</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/IMG-20250819-WA0003.jpg" alt="Bluetooth Earbuds">
-      <h3>Bluetooth Earbuds</h3>
-      <p>Compact design, premium sound quality.</p>
-      <p>$60</p>
-      <button>Add to Cart</button>
-    </div>
-  </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BassKing Audio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #111;
       color: white;
       padding: 15px;
       text-align: center;
     }
-    h1 {
-      margin: 0;
-    }
-    h2 {
-      margin: 20px;
-      text-align: center;
-    }
     .products {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      justify-content: center;
       padding: 20px;
     }
     .product {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
       padding: 15px;
+      border-radius: 8px;
       text-align: center;
-      width: 200px;
       box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
     }
     .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .product p {
-      margin: 8px 0;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
     .price {
-      color: green;
       font-weight: bold;
-      font-size: 16px;
+      color: #27ae60;
+      margin: 10px 0;
     }
     .buy-btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #111;
+      padding: 10px 15px;
+      background: #27ae60;
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
     .buy-btn:hover {
-      background-color: green;
+      background: #219150;
     }
   </style>
 </head>
@@ -198,7 +62,6 @@
     <p>High Quality Audio Products</p>
   </header>
 
-  <h2>Our Products</h2>
   <div class="products">
 
     <div class="product">
@@ -228,6 +91,8 @@
       <p class="price">Price: 2250 PKR</p>
       <a href="https://wa.me/923248682800?text=I%20want%20to%20buy%20Product%204" class="buy-btn">Buy Now</a>
     </div>
-<html>
-<html/>
- 
+
+  </div>
+
+</body>
+</html>
