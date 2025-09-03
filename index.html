@@ -1,27 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="xyz12345abcde" />
   <title>BassKing Audio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      background: #f8f9fa;
     }
     header {
       background: #222;
       color: white;
-      padding: 15px;
       text-align: center;
+      padding: 20px;
     }
-    .products {
+    header h1 {
+      margin: 0;
+    }
+    .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
@@ -29,47 +30,52 @@
       background: white;
       padding: 15px;
       border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
     }
     .product img {
       max-width: 100%;
-      height: auto;
       border-radius: 6px;
     }
-    .price {
-      font-weight: bold;
-      color: #27ae60;
-      margin: 10px 0;
+    .product h3 {
+      margin: 10px 0 5px;
     }
-    .buy-btn {
+    .product p {
+      margin: 5px 0;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    .btn {
       display: inline-block;
-      padding: 10px 15px;
-      background: #27ae60;
+      padding: 10px 20px;
+      background: #28a745;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s;
+      margin-top: 10px;
     }
-    .buy-btn:hover {
-      background: #219150;
-<div class="products">
-
-    <div class="product">
-      <img src="images/IMG-20250819-WA0001.jpg" alt="Product 1">
-      <p>Product 1</p>
-      <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%201" class="buy-btn">Buy Now</a>
-    </div>
-
-    <div class="product">
-      <img src="images/IMG-20250819-WA0002.jpg" alt="Product 2">
-      <p>Product 2</p>
-      <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%202" class="buy-btn">Buy Now</a>
-    </div>
-
-  </div>
+    .btn:hover {
+      background: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 20px;
+    }
+    .qr-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .qr-section img {
+      max-width: 250px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -79,37 +85,47 @@
     <p>High Quality Audio Products</p>
   </header>
 
-  <div class="products">
-
+  <div class="container">
     <div class="product">
-      <img src="images/IMG-20250819-WA0001.jpg" alt="Product 1">
-      <p>Product 1</p>
+      <img src="images/IMG-20250819-WA0000.jpg" alt="Product 1">
+      <h3>Product 1</h3>
       <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%201" class="buy-btn">Buy Now</a>
+      <a href="https://wa.me/923248682800?text=Hello%20I%20want%20to%20buy%20Product%201.%20Payment%20via%20EasyPaisa%2003248682800" class="btn">Buy Now</a>
     </div>
 
     <div class="product">
       <img src="images/IMG-20250819-WA0002.jpg" alt="Product 2">
-      <p>Product 2</p>
+      <h3>Product 2</h3>
       <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%202" class="buy-btn">Buy Now</a>
+      <a href="https://wa.me/923248682800?text=Hello%20I%20want%20to%20buy%20Product%202.%20Payment%20via%20EasyPaisa%2003248682800" class="btn">Buy Now</a>
     </div>
 
     <div class="product">
       <img src="images/IMG-20250819-WA0003.jpg" alt="Product 3">
-      <p>Product 3</p>
+      <h3>Product 3</h3>
       <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923001234567?text=I%20want%20to%20buy%20Product%203" class="buy-btn">Buy Now</a>
+      <a href="https://wa.me/923248682800?text=Hello%20I%20want%20to%20buy%20Product%203.%20Payment%20via%20EasyPaisa%2003248682800" class="btn">Buy Now</a>
     </div>
 
     <div class="product">
-      <img src="images/IMG-20250901-WA003.jpg" alt="Product 4">
-      <p>Product 4</p>
+      <img src="images/IMG-20250901-WA0031.jpg" alt="Product 4">
+      <h3>Product 4</h3>
       <p class="price">Price: 2250 PKR</p>
-      <a href="https://wa.me/923248682800?text=I%20want%20to%20buy%20Product%204" class="buy-btn">Buy Now</a>
+      <a href="https://wa.me/923248682800?text=Hello%20I%20want%20to%20buy%20Product%204.%20Payment%20via%20EasyPaisa%2003248682800" class="btn">Buy Now</a>
     </div>
-
   </div>
 
+  <!-- QR Code Section -->
+  <div class="qr-section">
+    <h2>Pay Easily with EasyPaisa / JazzCash</h2>
+    <p>Scan this QR Code to send payment directly.</p>
+    <img src="images/easypaisa-qr.png" alt="EasyPaisa QR Code">
+    <p><strong>Account Number:</strong> 03248682800</p>
+  </div>
+
+  <footer>
+    <p>For Orders & Payments contact on WhatsApp: <strong>03248682800</strong></p>
+    <p>EasyPaisa number: <strong>03248682800</strong></p>
+  </footer>
 </body>
 </html>
