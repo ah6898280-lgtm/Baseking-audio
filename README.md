@@ -1,2 +1,2 @@
  # Baseking-audio
-Official BassKing Audio website 
+Official Baseking Audio website 
